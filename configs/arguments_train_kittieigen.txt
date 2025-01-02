@@ -1,0 +1,33 @@
+--mode train
+--model_name pixelformer_kittieigen
+--encoder large07
+--pretrain pretrained/swin_large_patch4_window7_224_22k.pth
+--dataset sintel
+--data_path /SSD1/sunghun/sintel/
+--gt_path /SSD1/sunghun/sintel/
+--filenames_file /SSD1/sunghun/sintel/train.txt
+--batch_size 1
+--num_epochs 20
+--learning_rate 4e-5
+--weight_decay 1e-2
+--adam_eps 1e-3
+--num_threads 0
+--input_height 416
+--input_width 1024
+--max_depth 80
+--do_kb_crop
+--do_random_rotate
+--degree 1.0
+--log_directory /home/mvpserver19/sunghun/depthmodel/log/
+--multiprocessing_distributed
+--dist_url tcp://127.0.0.1:4321
+
+--log_freq 5000000000
+--do_online_eval
+--eval_freq 10
+--data_path_eval /SSD1/sunghun/sintel/
+--gt_path_eval /SSD1/sunghun/sintel/
+--filenames_file_eval /SSD1/sunghun/sintel/val.txt
+--min_depth_eval 1e-3
+--max_depth_eval 80
+--garg_crop
