@@ -6,3 +6,6 @@ This repository provides the official implementation of "STATIC: Surface Tempora
 <p align="center">
     <a href="https://arxiv.org/abs/2412.01090v2"><img src="https://img.shields.io/badge/STATIC-arXiv-red.svg"></a>
 </p>
+
+## Pretrained Models
+You can download the pretrained models "kitti" from here <a href="https://drive.google.com/file/d/1Ekzau6KejDREbCReEVwql4ruI75XyeKN/view?usp=sharing">ckpt</a>
